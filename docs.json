@@ -234,6 +234,13 @@
         "pages": [
           "drafts/clock-in-example"
         ]
+      },
+      {
+        "group": "Changelog",
+        "pages": [
+          "changelog/overview",
+          "changelog/2026-06-29"
+        ]
       }
     ]
   },

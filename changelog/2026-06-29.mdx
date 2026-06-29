@@ -1,0 +1,135 @@
+---
+title: "Week of June 29, 2026"
+description: "Denial worklist and analytics, payer voice calls, pre-bill validation, CAD and schedule upgrades, station display widgets, and UI polish."
+sidebarTitle: "June 29, 2026"
+---
+
+A big week for Revenue and Dispatch, plus a refreshed look across Admin, Home, and mobile.
+
+## New features
+
+### Denials worklist and analytics
+Denied claims now sort themselves into action lanes so billers see what to work next, and a new denial analytics dashboard shows trends over time. Each denial opens with the full CARC/RARC explanation, the original 835/277, and any prior denial history in one view. See [Work denials](/modules/revenue/claims/work-denials).
+
+### Call payer from a claim
+A **Call payer** button on the claim Overview tab places a voice call to the payer, runs a denial-specific script, and logs the outcome back to the claim. Useful for fast follow-up on aged or denied claims.
+
+### Corrected-claim and COB resubmits
+You can now resubmit corrected claims for modifier and demographic fixes directly from the claim, and switch the primary payer on a coordination-of-benefits claim without a manual resend. The correction dialog shows exactly which COB payer is being billed.
+
+### Pre-bill validation gates
+Claims now run eligibility, term-date, other-insured DOB, and ambulance-modifier checks before submission. Claims with a date of service after coverage terminates are blocked, and MCO-primary issues are flagged. Inpatient (POS 21) claims require an admission date.
+
+### Secondary (Medicaid) billing
+Secondary Medicaid billing has been repaired and wired up end-to-end with auto-submit support.
+
+### Payer portal playbooks and MFA hand-off
+Read-only NaviNet and Availity portal playbooks now run inside LifelineIQ, with a real-time human MFA hand-off when a payer challenges the session. An eligibility run type lets the agent fetch coverage straight from the portal.
+
+### Destination decision support
+Dispatch now recommends transport destinations based on facility capabilities and current diversion status. See the destination card on the incident view.
+
+### Geofence-driven status updates
+911 incidents can auto-advance to **En route** and **On scene** when a unit crosses configured geofences. Set up zones in **Admin → Dispatch → Geofencing**.
+
+### Station displays
+Station displays got several new widgets: weather radar with all-alerts severity, a celebrations widget for birthdays and work anniversaries, dispatch-takeover audio, and a response timer with route-to-scene during active incidents. Displays can also run in portrait orientation. See [Create a station display](/modules/display/create-a-station-display).
+
+### Active911-parity alert detail
+The mobile and web alert detail screens were redesigned for Active911 parity, with a new **Arrive at station** status.
+
+### Fire reporting on real data
+Fire Activities/CRR, Scheduling & Staffing, Personnel, Properties & Preplans, and Assets & Logistics are now wired to live data instead of placeholders. NERIS submissions now reconcile async accept/reject responses and support resubmit after rejection. See [Submit to NERIS](/modules/fire-reporting/submit-to-neris).
+
+### Inventory: lots, batches, and expiration
+Supplies are now tracked by lot batch and expiration date, and expirations show when staff take product out of stock. Inventory status reflects total stock across all locations.
+
+### MIH consent and education tracking
+MIH now sends consent follow-up and renewal reminders automatically and tracks whether enrolled patients have read the education you send them, tied to pathway goals.
+
+### Configurable agency rank
+Agencies can now configure their own personnel **Rank** field from Admin.
+
+### Supervisor fatigue overrides
+Supervisors can record fatigue overrides and waivers when assigning shifts that would otherwise be blocked.
+
+### Scheduled report subscriptions by role
+Scheduled reports can now target roles and groups, not just individual users.
+
+## Updates
+
+### Admin and navigation refresh
+Admin pages now share a single side-rail layout with a completion ring for required fields. The agency profile setup meter is a clickable "% complete" menu. Module switcher groups are organized into branded Lifeline sections. The Fleet module has been renamed **Maintenance** in navigation.
+
+### Revenue navigation
+The Revenue dashboard has been consolidated, with claims-by-stage counts on the sidebar. Payment Posting is now a hub with a switcher for Refunds, Underpayments, and Bank Rec. Contracts moved from a standalone page into the per-payer Payor view and a facility Contracts tab.
+
+### Claim rules engine
+Claim rules now support:
+- Conditions on secondary and tertiary payers.
+- A positional service-line modifier action.
+- A **stop-after-match** flag for rule exceptions.
+- A documentation attach + reprocess action.
+
+### CAD board and dispatch map
+- Edit a unit's live activation (crew and hours) directly from the CAD board.
+- Right-click the dispatch map to start an incident at that location.
+- Select and dispatch units from the map.
+- Pop the CAD map out into its own window.
+- CAD board lanes now gate to staffed shifts or assigned work.
+- Dispatch uses the standard collapsible nav.
+
+See [Use the CAD board](/modules/dispatch/use-the-cad-board).
+
+### Scheduling
+- Month view shows every shift with per-day tiles and snaps to today.
+- Rotation order is honored within every schedule group.
+- Schedule coverage gaps are readable and clickable.
+- A traditional-calendar toggle is available on the schedule toolbar.
+- A leave-type reason drop-down appears when marking someone out.
+- Personnel and scheduling users can load `/schedule` without the CAD module.
+
+See [Build a schedule](/modules/personnel/schedule/build-a-schedule).
+
+### Timecards and timekeeping
+PTO and leave now appear on timecard reconciliation. Timecard exports report the real pay-period window. Agency admins can save pay-period and FLSA config. See [Review timecards](/modules/personnel/time/review-timecards).
+
+### Home dashboard
+- The Home calendar is clickable and deep-links into the schedule.
+- The performance metrics widget is configurable, with crew-based attribution.
+- Pin specific KB articles or policies as Home resources.
+- Slack-style multi-emoji reactions on the home feed.
+- Suggested resources and empty-widget hints in the dashboard builder.
+
+### Chart editor
+The chart editor navigation has been condensed for faster field charting, and the status stack now collapses into the header. No-patient, cancelled, MCI, and attach/CAD actions are surfaced inline.
+
+### CRM and onboarding
+Agency onboarding is now integrated directly into the CRM account tab. CRM accounts gained firmographics, lead source, branding, and relationships; segmentation by region and segment with filters; and an editable RFP Overview. Account health is now derived from real signals.
+
+### Mobile redesign
+A multi-week mobile redesign continues — softer cards, lighter headings, a clean large-title shell, a Today widget board, and refreshed Clock, Messages, Alerts, Connect, and Directory screens.
+
+### Brand and login
+The login page got a cinematic hero refresh with an EKG motif and a reframed session-expired flow. Brand green is now the action color across the app, with the lime hue retired.
+
+## Bug fixes
+
+- Login no longer locks out users who have a soft-deleted duplicate profile.
+- Claim Financials current balance now matches the header.
+- Fixed claims import history timing out and dropping the original ZIP filename.
+- Facility invoice generation now re-fetches selected claims correctly.
+- Mobile forms can be submitted again — the tab bar no longer covers the submit control.
+- The all-agencies sidebar shows the correct context label.
+- Relay duty status hover contrast fixed.
+- CAD intake **Create incident** now lists the missing required fields when disabled.
+- CAD board View menu renders above the timeline.
+- Dispatch alert sound stays consistent when the sidebar collapses.
+- Fixed Open shifts crash on missing `created_at`.
+- Inventory transaction lookups and lot ordering no longer 500.
+- The claim-rule editor no longer crashes on legacy rules.
+- Non-CAD users no longer 403-poll active alerts in the background.
+- Established agencies are no longer forced back into onboarding on login.
+- Facility designation and split addresses now persist on edit.
+- Community events accept a category selector so they color-code on the calendar.
+- Newly added grants now sort to the top of the list.
