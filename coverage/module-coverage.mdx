@@ -27,6 +27,14 @@ This page tracks the rollout from starter docs to complete LifelineIQ documentat
 | Dispatch | Create an incident | [Create an incident](/modules/dispatch/create-an-incident) | `/dispatch/incidents`, legacy new-call redirects |
 | Clinical quality | Review QA worklist | [Review the QA worklist](/modules/clinical/review-qa-worklist) | `/clinical/qa` |
 | Clinical quality | Complete QA review | [Complete a QA review](/modules/clinical/complete-a-qa-review) | `/clinical/qa-review/incident/:incidentId` |
+| Fleet | Report maintenance issue | [Report a maintenance issue](/modules/fleet/report-a-maintenance-issue) | `/fleet/work-orders`, `ReportMaintenanceIssueDialog`, `/fleet/inspections` |
+| Fleet | Manage work order | [Manage a work order](/modules/fleet/manage-a-work-order) | `/fleet/work-orders`, `/fleet/work-orders/:workOrderId` |
+| Education | Take a course | [Take a course](/modules/education/take-a-course) | `/education/my-learning`, `/education/my-learning/:enrollmentId` |
+| Education | Track learner progress | [Track learner progress](/modules/education/track-learner-progress) | `/education/progress` |
+| Safety | Report safety incident | [Report a safety incident](/modules/safety/report-a-safety-incident) | `/safety/incidents`, `/safety/report`, `/safety/incidents/new` |
+| Safety | Review safety checks | [Review safety checks](/modules/safety/review-safety-checks) | `/safety/checks`, `RecordSafetyCheckDialog` |
+| Compliance | Manage compliance documents | [Manage compliance documents](/modules/compliance/manage-compliance-documents) | `/compliance/documents` |
+| Compliance | Set compliance goals | [Set compliance goals](/modules/compliance/set-compliance-goals) | `/compliance/goals` |
 
 ## Required next coverage
 
@@ -35,6 +43,10 @@ This page tracks the rollout from starter docs to complete LifelineIQ documentat
 - More patient portal, survey, medical alert, identity, and reconciliation workflows.
 - More dispatch recurring trip, facility portal, resource status, MDT, import, shift report, and admin setup workflows.
 - More clinical incident, registry, provider history, QA insight, and clinical settings workflows.
+- More Fleet vehicle records, vehicle documents, inspections, PM schedules, fuel, reports, and admin setup workflows.
+- More Education program setup, course authoring, learner roster, field training, preceptor, recertification, readiness, reports, and accreditation workflows.
+- More Safety hazards, exposure control, driver fleet safety, scene safety, fit testing, workforce, crew wellbeing, workers comp, committee, fatigue, OSHA, and admin template workflows.
+- More Compliance program, agency authority, dashboard follow-up, resources, and compliance settings workflows.
 - Admin settings.
 - API classification.
 - Changelog sync from LifelineIQ `CHANGELOG/`.

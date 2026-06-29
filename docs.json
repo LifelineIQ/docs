@@ -75,6 +75,38 @@
         ]
       },
       {
+        "group": "Fleet",
+        "pages": [
+          "modules/fleet/overview",
+          "modules/fleet/report-a-maintenance-issue",
+          "modules/fleet/manage-a-work-order"
+        ]
+      },
+      {
+        "group": "Education",
+        "pages": [
+          "modules/education/overview",
+          "modules/education/take-a-course",
+          "modules/education/track-learner-progress"
+        ]
+      },
+      {
+        "group": "Safety",
+        "pages": [
+          "modules/safety/overview",
+          "modules/safety/report-a-safety-incident",
+          "modules/safety/review-safety-checks"
+        ]
+      },
+      {
+        "group": "Compliance",
+        "pages": [
+          "modules/compliance/overview",
+          "modules/compliance/manage-compliance-documents",
+          "modules/compliance/set-compliance-goals"
+        ]
+      },
+      {
         "group": "Personnel administration",
         "pages": [
           "modules/personnel/offboarding/offboard-an-employee"
