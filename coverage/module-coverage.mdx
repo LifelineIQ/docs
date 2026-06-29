@@ -52,6 +52,17 @@ This page tracks the rollout from starter docs to complete LifelineIQ documentat
 | IT | Manage IT asset | [Manage an IT asset](/modules/it/manage-an-it-asset) | `/it/assets`, `/it/assets/:assetId` |
 | Chart | Create and complete chart | [Create and complete a chart](/modules/chart/create-and-complete-a-chart) | `/chart`, `/chart/new`, `/chart/:id` |
 | Chart | Print or export chart | [Print or export a chart](/modules/chart/print-or-export-a-chart) | `/chart/:id/print` |
+| Public portals | Submit records request | [Submit a records request](/modules/public-portals/submit-a-records-request) | `/records-request/:agencySlug`, `/records-request/:agencySlug/request/:requestId`, `/records-request/:agencySlug/portal/:token` |
+| Public portals | Use payment link | [Use a payment link](/modules/public-portals/use-a-payment-link) | `/pay/:token` |
+| Public portals | Submit community event request | [Submit a community event request](/modules/public-portals/submit-a-community-event-request) | `/community-events/:agencySlug` |
+| Onboarding | Complete agency onboarding | [Complete agency onboarding](/modules/onboarding/complete-agency-onboarding) | `/onboarding`, `/launchpad` |
+| Onboarding | Review onboarding blockers | [Review onboarding blockers](/modules/onboarding/review-onboarding-blockers) | `/onboarding/manager` |
+| Display | Create station display | [Create a station display](/modules/display/create-a-station-display) | `/display/create`, `/display/edit/:displayId` |
+| Display | Manage display devices | [Manage display devices](/modules/display/manage-display-devices) | `/display/devices` |
+| Print Management | Work print job | [Work a print job](/modules/print-management/work-a-print-job) | `/print-management/subscriptions`, `/print-management/subscriptions/:id` |
+| Print Management | Returned mail and checks | [Process returned mail and checks](/modules/print-management/process-returned-mail-and-checks) | `/print-management/intake`, `/print-management/check-payments` |
+| Ops Charts | Create ops chart | [Create an ops chart](/modules/ops-charts/create-an-ops-chart) | `/ops-charts/safety/charts`, `/ops-charts/security/charts`, `/ops-charts/:id` |
+| Ops Charts | Review ops chart QA | [Review ops chart QA](/modules/ops-charts/review-ops-chart-qa) | `/ops-charts/safety/qa`, `/ops-charts/security/qa` |
 
 ## Required next coverage
 
@@ -71,6 +82,11 @@ This page tracks the rollout from starter docs to complete LifelineIQ documentat
 - More Fire Reporting prevention, properties, preplans, inspections, permits, hydrants, assets, staffing, personnel, activities, references, and admin settings workflows.
 - More IT dashboard, ticket comments, ticket attachments, asset files, assignment history, and IT settings workflows.
 - More Chart corrections, signatures, locking, NEMSIS submission, migration reports, and chart settings workflows.
+- More Public portal facility, tracking, staffing, careers, community event contract/payment/survey, public compliance, and call shift response workflows.
+- More Onboarding launchpad, template builder, preview, task assignment, imports, and setup-to-admin handoff workflows.
+- More Display overview, all display actions, duplicate/delete/activate, widget builder details, alert layout, access URLs, and device troubleshooting workflows.
+- More Print Management statement queue, print batches, accounting reconciliation, and cross-agency controls.
+- More Ops Charts task, approval, attachment, link, closeout, and status transition workflows.
 - Admin settings.
 - API classification.
 - Changelog sync from LifelineIQ `CHANGELOG/`.

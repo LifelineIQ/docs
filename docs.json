@@ -166,6 +166,47 @@
         ]
       },
       {
+        "group": "Public portals",
+        "pages": [
+          "modules/public-portals/overview",
+          "modules/public-portals/submit-a-records-request",
+          "modules/public-portals/use-a-payment-link",
+          "modules/public-portals/submit-a-community-event-request"
+        ]
+      },
+      {
+        "group": "Onboarding",
+        "pages": [
+          "modules/onboarding/overview",
+          "modules/onboarding/complete-agency-onboarding",
+          "modules/onboarding/review-onboarding-blockers"
+        ]
+      },
+      {
+        "group": "Display",
+        "pages": [
+          "modules/display/overview",
+          "modules/display/create-a-station-display",
+          "modules/display/manage-display-devices"
+        ]
+      },
+      {
+        "group": "Print Management",
+        "pages": [
+          "modules/print-management/overview",
+          "modules/print-management/work-a-print-job",
+          "modules/print-management/process-returned-mail-and-checks"
+        ]
+      },
+      {
+        "group": "Ops Charts",
+        "pages": [
+          "modules/ops-charts/overview",
+          "modules/ops-charts/create-an-ops-chart",
+          "modules/ops-charts/review-ops-chart-qa"
+        ]
+      },
+      {
         "group": "Personnel administration",
         "pages": [
           "modules/personnel/offboarding/offboard-an-employee"
