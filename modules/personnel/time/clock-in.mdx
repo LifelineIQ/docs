@@ -4,58 +4,82 @@ description: "Start your shift in Relay so your time can be reviewed later."
 sidebarTitle: "Clock in"
 ---
 
-Use the clock bar on the Relay home page to start your shift.
+Use **Relay \> Today** when you are starting your shift. The clock control appears in the top bar and changes based on whether LifelineIQ already has an open time entry for you.
+
+<Frame caption="Relay Today screen with the Clock In control in the top bar. Personal information is blurred.">
+  ![Relay Today page showing the top bar with Clock In, quick actions, schedule information, and work navigation.](/images/screenshots/relay-home.png)
+</Frame>
 
 <Note>
-  Open **Relay** from LifelineIQ. If you use an older **Connect** link, LifelineIQ sends you to Relay.
+  Older **Connect** links now route users into Relay. Use **Relay** as the current home for field staff workflows.
 </Note>
 
 ## Before you start
 
-Make sure you are signed in to the correct agency. If you work for more than one agency, check the agency shown in LifelineIQ before you clock in.
+Make sure you are signed in under the correct agency. If you work for more than one agency, check the active agency before recording time.
+
+You need an active LifelineIQ account with permission to use Relay time tracking.
+
+## What this page is for
+
+Clocking in creates the start of your time entry for the day. Managers review time entries later before payroll or timecard export.
 
 ## Steps
 
 <Steps>
   <Step title="Open Relay">
-    Go to **Relay**.
+    Go to **Relay**. The page opens on **Today**.
   </Step>
+  <Step title="Find the clock control">
+    Look at the top-right area of the Relay header. If you are not clocked in, the control shows **Clock In**.
 
-  <Step title="Find the clock bar">
-    Look near the top of the Relay home page for the clock bar.
-
-    If you are not clocked in, it shows **Off Duty** and a **Clock In** button.
+    On some screen sizes, the same clock control may appear as an icon with the **Clock In** label beside it.
   </Step>
+  <Step title="Check that you are off duty">
+    If the page shows **Off Duty** or the button says **Clock In**, LifelineIQ does not have an open time entry for you.
 
-  <Step title="Clock in">
-    Select **Clock In**.
-
-    LifelineIQ confirms the clock-in with this message: **Clocked in**.
+    If the page shows **On Duty** or the action says **Clock Out**, you are already clocked in and should not clock in again.
   </Step>
-
-  <Step title="Confirm you are on duty">
-    The clock bar changes to **On Duty** and starts showing your shift time.
+  <Step title="Select Clock In">
+    Select **Clock In** once when your shift starts.
+  </Step>
+  <Step title="Wait for confirmation">
+    LifelineIQ records the clock-in and updates the duty state. The action changes from **Clock In** to **Clock Out** when your time entry is open.
+  </Step>
+  <Step title="Continue your Relay workflow">
+    After clocking in, use Relay for shift work such as **Truck Check**, **Report Case**, **Time Off**, **Schedule**, **My Tasks**, **Policies**, **Training**, or **HR**, depending on what your agency has enabled.
   </Step>
 </Steps>
 
 ## What LifelineIQ records
 
-LifelineIQ records your clock-in time and marks the entry as pending for manager review.
+LifelineIQ records the clock-in time, the active user, agency context, and a pending time entry for review. The entry is not the final payroll record until the timecard review process is completed.
+
+## What good looks like
+
+After clocking in, the Relay header no longer asks you to clock in. It shows the active duty state and gives you the option to **Clock Out** when the shift ends.
 
 ## Common problems
 
 ### I do not see Clock In
 
-If the clock bar shows **On Duty**, you are already clocked in. Use **Clock Out** when your shift ends.
+You may already be clocked in. Look for **On Duty** or **Clock Out** in the same top bar area.
 
-### I clicked Clock In but it did not work
+### I clicked Clock In but I am not sure it worked
 
-Refresh Relay and check the clock bar again. If it now shows **On Duty**, your clock-in was recorded.
+Refresh Relay and look at the clock control again. If it now shows **Clock Out**, your clock-in was recorded.
 
-If it still shows **Off Duty**, contact your supervisor or LifelineIQ administrator.
+### I clocked in under the wrong agency
+
+Tell your supervisor or timecard reviewer. Do not create duplicate time entries to fix it yourself unless your agency has told you to do that.
+
+### I forgot to clock in
+
+Tell your supervisor or timecard reviewer. They can review the timecard workflow and make the appropriate correction according to agency policy.
 
 ## Related pages
 
 - [Clock out](/modules/personnel/time/clock-out)
 - [Review timecards](/modules/personnel/time/review-timecards)
+- [Build a schedule](/modules/personnel/schedule/build-a-schedule)
 - [Relay overview](/modules/relay/overview)

@@ -226,7 +226,8 @@
       {
         "group": "Implementation tracking",
         "pages": [
-          "coverage/module-coverage"
+          "coverage/module-coverage",
+          "coverage/page-quality-standard"
         ]
       },
       {

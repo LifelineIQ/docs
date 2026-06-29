@@ -4,62 +4,84 @@ description: "Open a claim and move it through the billing workflow."
 sidebarTitle: "Work a claim"
 ---
 
-Use the claims worklist to review claim details, fix issues, and move the claim toward submission.
+Use **Revenue \> Prepare Claims** when a claim needs review before billing. This worklist is where billing users search, group, filter, import, create, and queue claims that are not ready to submit yet.
+
+<Frame caption="Revenue claims worklist in the demo workspace. No patient or claim details are shown.">
+  ![Revenue Prepare Claims worklist showing queue filters, search, grouping controls, and claim action buttons.](/images/screenshots/revenue-claims.png)
+</Frame>
 
 ## Before you start
 
-Open **Revenue** and go to **Claims**. The current route is `/revenue/claims`.
+You need access to the **Revenue** module for the active agency.
 
-You need access to revenue claims for the active agency.
+Open **Revenue** and select **Prepare Claims** under **Claims by Stage**. The current route is `/revenue/claims`.
+
+## What this page is for
+
+Use this page to answer four questions before a claim goes out:
+
+- Is the claim in the right queue?
+- Is required patient, run, coverage, service, coding, document, and charge information present?
+- Is there a validation or follow-up issue that must be fixed first?
+- Is the claim ready for submission, or should it move to payer follow-up, denial work, collections, or another queue?
 
 ## Steps
 
 <Steps>
-  <Step title="Open Claims">
-    Go to **Revenue** and open **Claims**.
+  <Step title="Open the claims worklist">
+    Go to **Revenue** and select **Prepare Claims**. Confirm that you are in the correct agency at the top of LifelineIQ.
   </Step>
+  <Step title="Choose the queue you want to work">
+    Use the queue chips across the top of the worklist, such as **Ready to Submit**, **Denied**, **Timely Filing Risk**, **Follow-Up Due**, and **Unassigned**.
 
+    Choose **My Claims**, **Unassigned**, or **All** to control whose claims appear.
+  </Step>
   <Step title="Find the claim">
-    Use the worklist filters, search, or queue status to find the claim you need.
-  </Step>
+    Use **Search claims...** when you know the claim number, run number, patient name, or another searchable value.
 
-  <Step title="Open the claim">
-    Open the claim record to review patient, trip, coverage, coding, charge, and submission details.
+    Use the **All Claims** dropdown, **Tags**, **Filters**, **Group by**, and **Columns** controls when you need to narrow a large queue.
   </Step>
+  <Step title="Open the claim record">
+    Select the claim row. Review the visible worklist columns first: **Status**, **Claim #**, **Run #**, **Patient Name**, **Service Date**, **Patient**, **Coverage**, **Service**, **Coding**, **Docs**, **Waystar**, **Charge**, and **Tags**.
 
-  <Step title="Review the workflow">
-    Open the claim workflow when you need to move through billing steps in order.
+    These columns tell you which part of the claim needs attention before you open the full record.
   </Step>
-
-  <Step title="Resolve issues">
-    Fix missing information, coverage problems, coding issues, charge issues, or validation warnings before submission.
+  <Step title="Fix the blocking item">
+    Work the missing or flagged section before moving the claim forward. Common examples are missing coverage, incomplete patient information, coding issues, missing documents, charge problems, or Waystar/submission readiness problems.
   </Step>
-
-  <Step title="Move to the next queue">
-    When the claim is ready, move it to the next appropriate status or queue for submission or follow-up.
+  <Step title="Use intake readiness when no claims are listed">
+    If the page shows **No claims yet**, select **Review intake readiness**. That sends you to the handoff review area where imported incidents, completed charts, or pre-billing items can be checked before they become claim work.
+  </Step>
+  <Step title="Move the claim to the next correct queue">
+    After the blocking item is resolved, route the claim based on its next action. Claims that are clean can move toward submission. Claims with payer problems, denials, collection needs, or other unresolved work should move to the matching queue instead of being forced through submission.
   </Step>
 </Steps>
 
-## What LifelineIQ changes
+## What good looks like
 
-LifelineIQ keeps the claim record, workflow state, notes, validation state, and billing history together so the next user can see what changed and what still needs work.
+A ready claim has no unresolved patient, coverage, service, coding, document, charge, or submission readiness blockers. The claim is in the correct queue, assigned if your team uses assignment, and has enough history for the next biller to understand what changed.
 
 ## Common problems
 
-### The claim is not ready to submit
+### I cannot find the claim
 
-Check the workflow sections for missing coverage, coding, charges, signatures, or validation issues.
+Clear filters, switch from **My Claims** to **All**, and check other claim stages such as **Payer Follow-Up**, **Collections**, **Closed Claims**, and the submission queue.
 
-### I opened the wrong view
+### The worklist is empty
 
-Use the claim record for the full claim history. Use the claim workflow when you need guided billing steps.
+Use **Review intake readiness**. Claims may not exist yet if the upstream chart, incident, import, or pre-billing handoff has not been completed.
 
-### The claim is in another queue
+### I do not know what to fix first
 
-Check follow-up, collections, complete, deductible holds, submission queue, and pre-billing queues if the claim does not appear in the main claims list.
+Start with the worklist columns. A missing or failed value in **Patient**, **Coverage**, **Service**, **Coding**, **Docs**, **Waystar**, or **Charge** usually points to the next section to open.
+
+### The claim should not be submitted
+
+Do not submit it just to clear the queue. Move it to the appropriate follow-up, denial, collections, or closed workflow and document the reason.
 
 ## Related pages
 
 - [Submit claims](/modules/revenue/claims/submit-claims)
 - [Work denials](/modules/revenue/claims/work-denials)
+- [Configure payers](/modules/revenue/setup/configure-payers)
 - [Revenue overview](/modules/revenue/overview)

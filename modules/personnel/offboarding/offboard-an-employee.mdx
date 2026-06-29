@@ -4,61 +4,106 @@ description: "Mark a staff member as offboarded while keeping their LifelineIQ r
 sidebarTitle: "Offboard an employee"
 ---
 
-Offboard an employee when they leave the organization and their records need to remain available for history, compliance, and audits.
+Use **Provider \> People** when an employee leaves the agency or needs to be removed from active staffing workflows. LifelineIQ keeps the employee's history so schedules, timecards, credentials, property, documents, and audits remain traceable.
+
+<Frame caption="Personnel People list with the Offboard action. Employee rows are blurred for privacy.">
+  ![Personnel People page showing employee filters, status tabs, Offboard, Invite to platform, and Hire actions.](/images/screenshots/personnel-people.png)
+</Frame>
+
+<Warning>
+  Do not delete historical employee records to offboard someone. Use the offboarding or termination workflow so prior activity stays available for reporting and audits.
+</Warning>
 
 ## Before you start
 
-Open **Personnel** and find the staff member. The current route is `/personnel`.
+You need permission to update personnel records for the active agency.
 
-You need permission to update personnel records.
+Before terminating someone, confirm your agency's HR process for final shifts, timecards, property, credentials, documents, and system access.
 
-<Warning>
-  Do not delete employee history to offboard someone. LifelineIQ keeps records so prior schedules, timecards, credentials, and audit history remain traceable.
-</Warning>
+## What this page is for
 
-## Steps
+Use this workflow when you need to remove an employee from active personnel operations while keeping their LifelineIQ record. Depending on where you start, LifelineIQ may show the quick **Offboard Employee** confirmation from the People list or the fuller **Terminate employee** dialog on a profile.
+
+## Steps from the People list
 
 <Steps>
-  <Step title="Open Personnel">
-    Go to **Personnel**.
+  <Step title="Open People">
+    Go to **Provider** and select **People**. The current route is `/personnel`.
   </Step>
+  <Step title="Find the employee">
+    Use the status tabs, search box, filter button, or table sorting to find the employee.
 
-  <Step title="Find the staff member">
-    Search or filter the list until you find the employee.
+    Useful tabs include **All**, **Active**, **New hires**, **Probationary**, **Out of Compliance**, **On Leave**, **Offboarding**, and **Terminated**.
   </Step>
-
-  <Step title="Open the offboarding action">
-    Use the staff member actions menu and choose the offboarding or termination action.
+  <Step title="Select the employee">
+    Check the box beside the employee if you are using the bulk **Offboard** action, or open the employee row/profile if you need the full profile workflow.
   </Step>
-
-  <Step title="Confirm the change">
-    Confirm that you want to offboard the staff member.
+  <Step title="Choose Offboard">
+    Select **Offboard** from the top action bar or the employee's row actions.
   </Step>
+  <Step title="Confirm Offboard Employee">
+    In the **Offboard Employee** confirmation, read the message carefully. It explains that LifelineIQ marks the employee as terminated but keeps their records for historical purposes.
 
-  <Step title="Review follow-up work">
-    Check any onboarding/offboarding checklist items, access tasks, schedule cleanup, and payroll/timecard review that apply.
+    Select **Offboard** only when you are sure.
   </Step>
 </Steps>
 
+## Steps from the employee profile
+
+<Steps>
+  <Step title="Open the employee profile">
+    From **People**, select the employee's row to open their profile.
+  </Step>
+  <Step title="Choose Terminate employee">
+    Open the employment action in the profile header and select **Terminate employee**.
+  </Step>
+  <Step title="Enter termination details">
+    In the **Terminate employee** dialog, choose **Termination type**, enter **Last day of work**, and enter the **Reason for termination**.
+  </Step>
+  <Step title="Upload or skip the notice if required">
+    If your agency settings require a termination notice, upload the termination letter or notice document. If your policy allows it, select **Skip**.
+  </Step>
+  <Step title="Review and confirm">
+    Review the type, last day, reason, and notice status. Select **Terminate employee** to finish.
+  </Step>
+</Steps>
+
+## Follow-up checklist
+
+After offboarding or termination, review these items before considering the process complete:
+
+- Remove or replace future schedule assignments.
+- Review final timecards and pending time entries.
+- Collect or mark returned property and equipment.
+- Review credentials, compliance items, and document retention needs.
+- Remove platform access if your agency process does not do it automatically.
+- Check payroll, benefits, and HR tasks outside LifelineIQ if they apply.
+
 ## What LifelineIQ changes
 
-LifelineIQ marks the staff member as inactive or terminated while keeping their historical records. Their prior schedules, timecards, documents, credentials, and audit history remain available where permitted.
+LifelineIQ updates the employee's employment status to inactive or terminated, keeps historical records, and can create or show offboarding checklist work when that workflow is configured.
 
 ## Common problems
 
-### The employee is still showing in active lists
+### The employee still appears in active lists
 
-Refresh the list and check the status filter. Some views have filters for active, offboarding, and terminated staff.
+Refresh the People page and check the active status tab. Some views include inactive or terminated employees when filters are set to **All**.
 
-### The employee still appears on a schedule
+### The employee still appears on future shifts
 
-Review future schedules and remove or replace the assignment where needed.
+Open **Schedule** and remove or replace future assignments. Terminating a profile does not automatically prove every future schedule slot is correctly covered.
 
-### Payroll still needs final time
+### I terminated the wrong employee
 
-Review the employee's timecards before final payroll export.
+Stop and notify an administrator immediately. Use the employee profile history and offboarding checklist to determine what changed before making further edits.
+
+### I cannot see Terminate employee
+
+You may not have permission, or you may be in a list view that only supports the quicker **Offboard** action. Open the employee profile or ask an administrator to complete the action.
 
 ## Related pages
 
-- [Review timecards](/modules/personnel/time/review-timecards)
 - [Build a schedule](/modules/personnel/schedule/build-a-schedule)
+- [Review timecards](/modules/personnel/time/review-timecards)
+- [Schedule settings](/admin/modules/schedule-settings)
+- [Security and access](/admin/setup/security-and-access)
