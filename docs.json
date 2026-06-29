@@ -41,6 +41,16 @@
         ]
       },
       {
+        "group": "Revenue",
+        "pages": [
+          "modules/revenue/overview",
+          "modules/revenue/claims/work-a-claim",
+          "modules/revenue/claims/submit-claims",
+          "modules/revenue/claims/work-denials",
+          "modules/revenue/setup/configure-payers"
+        ]
+      },
+      {
         "group": "Personnel administration",
         "pages": [
           "modules/personnel/offboarding/offboard-an-employee"
