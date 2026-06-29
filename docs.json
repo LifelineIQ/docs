@@ -107,6 +107,31 @@
         ]
       },
       {
+        "group": "Inventory",
+        "pages": [
+          "modules/inventory/overview",
+          "modules/inventory/add-supplies-or-equipment",
+          "modules/inventory/create-and-receive-an-order",
+          "modules/inventory/run-an-inventory-count"
+        ]
+      },
+      {
+        "group": "Community",
+        "pages": [
+          "modules/community/overview",
+          "modules/community/create-a-community-event",
+          "modules/community/manage-renewals-and-donations"
+        ]
+      },
+      {
+        "group": "Intelligence and automation",
+        "pages": [
+          "modules/intelligence/overview",
+          "modules/intelligence/find-and-download-a-report",
+          "modules/automation/create-an-automation-workflow"
+        ]
+      },
+      {
         "group": "Personnel administration",
         "pages": [
           "modules/personnel/offboarding/offboard-an-employee"
