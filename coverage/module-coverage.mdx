@@ -21,14 +21,20 @@ This page tracks the rollout from starter docs to complete LifelineIQ documentat
 | Revenue | Submit claims | [Submit claims](/modules/revenue/claims/submit-claims) | `/revenue/claims/submission-queue` |
 | Revenue | Work denials | [Work denials](/modules/revenue/claims/work-denials) | `/revenue/denials` |
 | Revenue setup | Configure payers | [Configure payers](/modules/revenue/setup/configure-payers) | `/revenue/finance/payers`, `/admin/revenue/payers` |
+| Patients | Find a patient | [Find a patient](/modules/patients/find-a-patient) | `/patients` |
+| Patients | Open a patient record | [Open a patient record](/modules/patients/open-a-patient-record) | `/patients/:id` |
+| Dispatch | Use the CAD board | [Use the CAD board](/modules/dispatch/use-the-cad-board) | `/dispatch` redirects to `/dispatch/schedule` |
+| Dispatch | Create an incident | [Create an incident](/modules/dispatch/create-an-incident) | `/dispatch/incidents`, legacy new-call redirects |
+| Clinical quality | Review QA worklist | [Review the QA worklist](/modules/clinical/review-qa-worklist) | `/clinical/qa` |
+| Clinical quality | Complete QA review | [Complete a QA review](/modules/clinical/complete-a-qa-review) | `/clinical/qa-review/incident/:incidentId` |
 
 ## Required next coverage
 
 - Revenue claim lifecycle.
 - Payer and facility setup.
-- Patient record workflows.
-- Dispatch workflows.
-- Clinical and charting workflows.
+- More patient portal, survey, medical alert, identity, and reconciliation workflows.
+- More dispatch recurring trip, facility portal, resource status, MDT, import, shift report, and admin setup workflows.
+- More clinical incident, registry, provider history, QA insight, and clinical settings workflows.
 - Admin settings.
 - API classification.
 - Changelog sync from LifelineIQ `CHANGELOG/`.

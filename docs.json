@@ -51,6 +51,30 @@
         ]
       },
       {
+        "group": "Patients",
+        "pages": [
+          "modules/patients/overview",
+          "modules/patients/find-a-patient",
+          "modules/patients/open-a-patient-record"
+        ]
+      },
+      {
+        "group": "Dispatch",
+        "pages": [
+          "modules/dispatch/overview",
+          "modules/dispatch/use-the-cad-board",
+          "modules/dispatch/create-an-incident"
+        ]
+      },
+      {
+        "group": "Clinical quality",
+        "pages": [
+          "modules/clinical/overview",
+          "modules/clinical/review-qa-worklist",
+          "modules/clinical/complete-a-qa-review"
+        ]
+      },
+      {
         "group": "Personnel administration",
         "pages": [
           "modules/personnel/offboarding/offboard-an-employee"
