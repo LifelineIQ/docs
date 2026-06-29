@@ -132,6 +132,40 @@
         ]
       },
       {
+        "group": "Mobile Integrated Health",
+        "pages": [
+          "modules/mih/overview",
+          "modules/mih/process-a-referral",
+          "modules/mih/enroll-a-patient",
+          "modules/mih/complete-a-visit-chart"
+        ]
+      },
+      {
+        "group": "Fire Reporting",
+        "pages": [
+          "modules/fire-reporting/overview",
+          "modules/fire-reporting/create-a-fire-report",
+          "modules/fire-reporting/review-a-fire-report",
+          "modules/fire-reporting/submit-to-neris"
+        ]
+      },
+      {
+        "group": "IT",
+        "pages": [
+          "modules/it/overview",
+          "modules/it/report-an-it-issue",
+          "modules/it/manage-an-it-asset"
+        ]
+      },
+      {
+        "group": "Chart",
+        "pages": [
+          "modules/chart/overview",
+          "modules/chart/create-and-complete-a-chart",
+          "modules/chart/print-or-export-a-chart"
+        ]
+      },
+      {
         "group": "Personnel administration",
         "pages": [
           "modules/personnel/offboarding/offboard-an-employee"
