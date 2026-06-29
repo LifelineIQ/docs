@@ -4,56 +4,85 @@ description: "Build a LifelineIQ schedule by creating shifts, assigning personne
 sidebarTitle: "Build a schedule"
 ---
 
-Use **Schedule** to create shifts and publish them when they are ready for crews.
+Use **Provider \> Schedule** to build and manage agency staffing. The schedule page lets schedulers work by calendar, open shifts, open roles, divisions, stations, crews, rotations, and saved views.
+
+<Frame caption="Schedule calendar view in the demo workspace.">
+  ![Schedule calendar showing month view, filters, open roles, grouping controls, KPI warnings, and Add Shift.](/images/screenshots/schedule-calendar.png)
+</Frame>
 
 ## Before you start
 
-Make sure the needed stations, units, shift templates, and personnel records are set up. If your agency uses rotation patterns, confirm the rotation setup before generating draft shifts.
+Make sure the people, stations, divisions, crews, rotations, and scheduling rules your agency uses have already been configured.
+
+You need scheduler or administrator access for the active agency.
+
+## What this page is for
+
+Use Schedule when you need to create coverage for a date, fill open roles, monitor warnings, approve schedule-related requests, and make sure crews can see the final schedule.
 
 ## Steps
 
 <Steps>
   <Step title="Open Schedule">
-    Go to **Schedule**.
+    Go to **Provider** and select **Schedule** under **Scheduling**. The current route is `/schedule`.
   </Step>
+  <Step title="Pick the schedule view">
+    Use the view controls at the top of the page. Common controls include **Calendar**, **Open shifts**, the date arrows, **Month - Calendar**, **Open roles**, **Group by Division**, and **Views**.
 
-  <Step title="Choose the schedule view">
-    Pick the date range and view that match the schedule you are building.
+    Choose the view that matches the job you are doing. Calendar view is useful for building a schedule by date. Open shifts and open roles are useful when you are trying to close gaps.
   </Step>
+  <Step title="Filter to the right coverage area">
+    Use **All divisions**, **All stations**, **All crews**, and **All rotations** to narrow the schedule before adding shifts.
 
-  <Step title="Create or generate shifts">
-    Add shifts manually, use shift templates, or use the rotation builder if your agency schedules by rotation.
+    Filtering first helps prevent creating a shift under the wrong station, crew, or rotation.
   </Step>
+  <Step title="Review the warning chips">
+    Check the chips above the calendar, such as open-role coverage warnings, **Paging**, **Alerts**, **Requests**, and **Signups**.
 
+    A red open-role warning means LifelineIQ sees required coverage that is not staffed yet.
+  </Step>
+  <Step title="Create a shift">
+    Select **Add Shift**. Enter the shift details required by your agency, such as date, time, assignment location, role, crew, unit, or other staffing fields shown in the drawer.
+  </Step>
   <Step title="Assign personnel">
-    Assign people to the shift roles that need coverage.
+    Add the right person to each role. Watch for conflicts, unavailable personnel, missing credentials, fatigue warnings, or staffing-rule warnings before saving.
   </Step>
-
-  <Step title="Review warnings">
-    Check coverage gaps, minimum staffing warnings, fatigue signals, and compliance warnings before publishing.
+  <Step title="Fill open roles">
+    Use **Open roles** when you need to see what still needs coverage. Work each gap until the warning count is resolved or intentionally left open according to agency policy.
   </Step>
-
-  <Step title="Publish the schedule">
-    Publish draft shifts when the schedule is ready for crews to see.
+  <Step title="Review requests and signups">
+    Use the **Requests** and **Signups** indicators when staff have requested time off, trades, open shifts, or other schedule changes. Resolve those items before treating the schedule as final.
+  </Step>
+  <Step title="Save or publish based on your workflow">
+    Save draft work while you are still building. Publish or release the schedule only when coverage, warnings, and request decisions are ready for staff to see.
   </Step>
 </Steps>
 
-## What LifelineIQ changes
+## What good looks like
 
-Draft shifts stay hidden from crews until they are published. Published shifts become available to schedule views, crew workflows, and schedule-related review tools.
+A complete schedule has the correct date range, station/division/crew context, all required roles covered or intentionally marked as open, and no unresolved warnings that should block release.
 
 ## Common problems
 
-### I cannot publish the schedule
+### The schedule shows open roles
 
-Review staffing and compliance warnings. LifelineIQ can block publishing when required staffing rules are not met.
+Open **Open roles** and review each gap. Add a person, create an open shift, page/call out if your agency uses that workflow, or document why the role remains open.
 
-### A person cannot be assigned
+### I cannot assign a person
 
-Check whether they are already assigned, unavailable, missing required credentials, or blocked by a scheduling rule.
+Check for availability, overlapping shifts, credential requirements, employment status, fatigue rules, or whether the person belongs to the division/station/crew you are scheduling.
+
+### Staff cannot see the schedule
+
+Confirm the schedule has been published or released according to your agency workflow. Draft shifts may not appear in staff-facing Relay views.
+
+### I built the shift in the wrong place
+
+Open the shift, correct the station/division/crew/role if allowed, or remove the incorrect shift and rebuild it in the correct schedule context.
 
 ## Related pages
 
 - [Approve schedule requests](/modules/personnel/schedule/approve-schedule-requests)
+- [Clock in](/modules/personnel/time/clock-in)
 - [Review timecards](/modules/personnel/time/review-timecards)
-- [Scheduling overview](/modules/personnel/schedule/overview)
+- [Schedule settings](/admin/modules/schedule-settings)

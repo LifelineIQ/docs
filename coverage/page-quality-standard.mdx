@@ -1,0 +1,67 @@
+---
+title: "Page quality standard"
+description: "Minimum checklist for every LifelineIQ how-to page."
+sidebarTitle: "Page quality standard"
+---
+
+Every module page must teach a real LifelineIQ workflow. A page is not complete just because it names a feature.
+
+Use this checklist when creating or reviewing documentation pages.
+
+## Minimum content for every how-to page
+
+Every how-to page must include:
+
+- A real screenshot of the LifelineIQ page or workflow.
+- A short description of what the screen is for.
+- Who should use the page and what permission or setup is needed.
+- The exact navigation path and current route when known.
+- True step-by-step instructions using visible LifelineIQ labels.
+- What LifelineIQ records or changes after the user completes the task.
+- What a successful result looks like.
+- Common problems and what to check first.
+- Related pages for setup, upstream work, downstream work, and manager review.
+
+## Screenshot rules
+
+Screenshots should show the real product, not a made-up mockup.
+
+Use demo or empty workspaces when possible. If a screen includes patient, employee, claim, payment, or private operational data, blur or crop it before publishing.
+
+Screenshots should be wrapped in a Mintlify frame:
+
+```mdx
+<Frame caption="Short caption that explains the screen.">
+  <img src="/images/screenshots/example.png" alt="Plain-language description of the screen." />
+</Frame>
+```
+
+## Step rules
+
+Steps should be simple, but not vague.
+
+Good steps name the button, tab, filter, queue, drawer, dialog, or status the user will actually see. For example, write **Select Add Shift**, not "create the thing."
+
+Do not include API implementation details on a field-user how-to page unless the page is specifically for API users.
+
+## Coverage rules
+
+Each module needs pages for the work users actually perform, including at least:
+
+- Overview: what the module does and who uses it.
+- Setup: admin settings, required reference data, roles, and integrations.
+- Daily work: the normal tasks a frontline or office user performs.
+- Review work: manager approval, QA, exceptions, denials, reconciliation, or audit review.
+- Troubleshooting: what to check when the workflow is blocked.
+- Related workflows: upstream pages that feed this task and downstream pages affected by it.
+
+## Review checklist
+
+Before a page is considered ready, confirm:
+
+- The route exists in the current LifelineIQ codebase.
+- The UI labels match the current dev branch.
+- The page answers the practical user question, such as "How do I clock in?" or "How do I build a schedule?"
+- The page links to the next likely task.
+- The screenshot is safe to publish.
+- The page is written for the user doing the work, not for an engineer reading the code.
