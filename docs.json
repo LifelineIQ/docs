@@ -18,6 +18,17 @@
         ]
       },
       {
+        "group": "Admin",
+        "pages": [
+          "admin/overview",
+          "admin/setup/agency-profile",
+          "admin/setup/security-and-access",
+          "admin/modules/schedule-settings",
+          "admin/modules/revenue-settings",
+          "admin/modules/provider-people-settings"
+        ]
+      },
+      {
         "group": "Relay",
         "pages": [
           "modules/relay/overview",

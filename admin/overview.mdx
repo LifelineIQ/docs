@@ -1,0 +1,65 @@
+---
+title: "Admin overview"
+description: "Use Admin to configure agency setup, security, module settings, integrations, workflows, and operational defaults."
+sidebarTitle: "Overview"
+---
+
+Admin is where authorized users configure LifelineIQ.
+
+The Admin sidebar is organized by the job the setting supports:
+
+- **Agency Setup**: organization, contacts, branding, documents, and security.
+- **Lifeline Respond**: Home, Dispatch, Chart, MIH, and Fire settings.
+- **Lifeline Quality**: Quality, Safety, and Compliance settings.
+- **Lifeline People**: Provider, Education, Patients, and Community settings.
+- **Lifeline Revenue**: claims, communications, finance, payer setup, facilities, enrollment, and EDI.
+- **Lifeline Logistics**: Fleet, Inventory, and IT settings.
+- **Lifeline Insight**: data, integrations, automation, policies, workflows, and AI agents.
+
+## Core setup work
+
+<CardGroup cols={2}>
+  <Card title="Set up agency profile" icon="building-2" href="/admin/setup/agency-profile">
+    Configure Organization, Contacts, Branding, and Documents.
+  </Card>
+  <Card title="Configure security and access" icon="shield-check" href="/admin/setup/security-and-access">
+    Review login, session, MFA, and audit settings.
+  </Card>
+  <Card title="Configure schedule settings" icon="calendar-days" href="/admin/modules/schedule-settings">
+    Set schedule builder, payroll, leave, PTO, visibility, and availability settings.
+  </Card>
+  <Card title="Configure revenue settings" icon="receipt" href="/admin/modules/revenue-settings">
+    Set claim, communication, finance, payer, facility, enrollment, and EDI settings.
+  </Card>
+</CardGroup>
+
+## How to use Admin
+
+<Steps>
+  <Step title="Open Admin">
+    Select **Admin** in LifelineIQ.
+  </Step>
+  <Step title="Choose the job area">
+    Open the category that matches the work, such as **Lifeline Revenue** or **Lifeline People**.
+  </Step>
+  <Step title="Choose the module">
+    Open the module group, such as **Revenue**, **Provider**, **Dispatch**, or **Chart**.
+  </Step>
+  <Step title="Open the setting">
+    Select the setting page you need.
+  </Step>
+  <Step title="Save and verify downstream">
+    Save changes, then check the operational workflow affected by the setting.
+  </Step>
+</Steps>
+
+<Warning>
+  Admin changes can affect production workflows. Use synthetic examples in docs and training, and never paste PHI or real patient data into setup notes.
+</Warning>
+
+## Related pages
+
+- [Agency profile](/admin/setup/agency-profile)
+- [Security and access](/admin/setup/security-and-access)
+- [Revenue settings](/admin/modules/revenue-settings)
+- [Provider and people settings](/admin/modules/provider-people-settings)
