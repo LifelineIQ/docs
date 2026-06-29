@@ -1,0 +1,101 @@
+---
+title: "Documentation coverage"
+description: "Track which LifelineIQ modules and workflows have verified docs."
+sidebarTitle: "Coverage"
+---
+
+This page tracks the rollout from starter docs to complete LifelineIQ documentation.
+
+## Current verified pages
+
+| Area | Workflow | Docs page | Evidence checked |
+| --- | --- | --- | --- |
+| Relay | Clock in | [Clock in](/modules/personnel/time/clock-in) | `/relay`, Relay home, `ConnectDashboard`, `/api/personnel/time-entries/clock-in` |
+| Relay | Clock out | [Clock out](/modules/personnel/time/clock-out) | Relay clock bar, `/api/personnel/time-entries/{id}/clock-out` |
+| Personnel timekeeping | Review timecards | [Review timecards](/modules/personnel/time/review-timecards) | `/schedule/timecards`, timecard dashboard |
+| Personnel timekeeping | Export timecards | [Export timecards](/modules/personnel/time/export-timecards) | Timecard export workflow, `/api/personnel/timecards/export` |
+| Scheduling | Build a schedule | [Build a schedule](/modules/personnel/schedule/build-a-schedule) | `/schedule`, schedule hub, draft/publish behavior |
+| Scheduling | Approve requests | [Approve schedule requests](/modules/personnel/schedule/approve-schedule-requests) | `/schedule/requests`, schedule and leave request review |
+| Personnel | Offboard employee | [Offboard an employee](/modules/personnel/offboarding/offboard-an-employee) | `/personnel`, offboarding/terminated status behavior |
+| Revenue | Work a claim | [Work a claim](/modules/revenue/claims/work-a-claim) | `/revenue/claims`, `/revenue/claims/:id`, `/revenue/claims/:id/workflow` |
+| Revenue | Submit claims | [Submit claims](/modules/revenue/claims/submit-claims) | `/revenue/claims/submission-queue` |
+| Revenue | Work denials | [Work denials](/modules/revenue/claims/work-denials) | `/revenue/denials` |
+| Revenue setup | Configure payers | [Configure payers](/modules/revenue/setup/configure-payers) | `/revenue/finance/payers`, `/admin/revenue/payers` |
+| Patients | Find a patient | [Find a patient](/modules/patients/find-a-patient) | `/patients` |
+| Patients | Open a patient record | [Open a patient record](/modules/patients/open-a-patient-record) | `/patients/:id` |
+| Dispatch | Use the CAD board | [Use the CAD board](/modules/dispatch/use-the-cad-board) | `/dispatch` redirects to `/dispatch/schedule` |
+| Dispatch | Create an incident | [Create an incident](/modules/dispatch/create-an-incident) | `/dispatch/incidents`, legacy new-call redirects |
+| Clinical quality | Review QA worklist | [Review the QA worklist](/modules/clinical/review-qa-worklist) | `/clinical/qa` |
+| Clinical quality | Complete QA review | [Complete a QA review](/modules/clinical/complete-a-qa-review) | `/clinical/qa-review/incident/:incidentId` |
+| Fleet | Report maintenance issue | [Report a maintenance issue](/modules/fleet/report-a-maintenance-issue) | `/fleet/work-orders`, `ReportMaintenanceIssueDialog`, `/fleet/inspections` |
+| Fleet | Manage work order | [Manage a work order](/modules/fleet/manage-a-work-order) | `/fleet/work-orders`, `/fleet/work-orders/:workOrderId` |
+| Education | Take a course | [Take a course](/modules/education/take-a-course) | `/education/my-learning`, `/education/my-learning/:enrollmentId` |
+| Education | Track learner progress | [Track learner progress](/modules/education/track-learner-progress) | `/education/progress` |
+| Safety | Report safety incident | [Report a safety incident](/modules/safety/report-a-safety-incident) | `/safety/incidents`, `/safety/report`, `/safety/incidents/new` |
+| Safety | Review safety checks | [Review safety checks](/modules/safety/review-safety-checks) | `/safety/checks`, `RecordSafetyCheckDialog` |
+| Compliance | Manage compliance documents | [Manage compliance documents](/modules/compliance/manage-compliance-documents) | `/compliance/documents` |
+| Compliance | Set compliance goals | [Set compliance goals](/modules/compliance/set-compliance-goals) | `/compliance/goals` |
+| Inventory | Add supplies or equipment | [Add supplies or equipment](/modules/inventory/add-supplies-or-equipment) | `/inventory/supplies`, `/inventory/equipment` |
+| Inventory | Create and receive an order | [Create and receive an order](/modules/inventory/create-and-receive-an-order) | `/inventory/orders`, `CreateOrderDialog`, `ReceiveOrderDialog` |
+| Inventory | Run an inventory count | [Run an inventory count](/modules/inventory/run-an-inventory-count) | `/inventory/audits` |
+| Community | Create community event | [Create a community event](/modules/community/create-a-community-event) | `/community/events`, `/community/events/new`, `/community/events/:eventId` |
+| Community | Manage renewals and donations | [Manage renewals and donations](/modules/community/manage-renewals-and-donations) | `/community/donations`, `/community/marketing/renewals` |
+| Intelligence | Find and download report | [Find and download a report](/modules/intelligence/find-and-download-a-report) | `/intelligence/reports/:moduleSlug`, `/intelligence/report-inbox` |
+| Automation | Create workflow | [Create an automation workflow](/modules/automation/create-an-automation-workflow) | `/automation/workflows`, `/automation/workflows/new`, `/automation/workflows/templates`, `/automation/workflows/history` |
+| MIH | Process referral | [Process an MIH referral](/modules/mih/process-a-referral) | `/mih/referrals`, `/mih/referrals/:referralId` |
+| MIH | Enroll patient | [Enroll an MIH patient](/modules/mih/enroll-a-patient) | `/mih/enrollment` |
+| MIH | Complete visit chart | [Complete an MIH visit chart](/modules/mih/complete-a-visit-chart) | `/mih/visits/:visitId/chart` |
+| Fire Reporting | Create fire report | [Create a fire report](/modules/fire-reporting/create-a-fire-report) | `/fire-reporting/new`, `/fire-reporting/reports/:id/edit` |
+| Fire Reporting | Review fire report | [Review a fire report](/modules/fire-reporting/review-a-fire-report) | `/fire-reporting/reports/review`, `/fire-reporting/qa-review/:reviewId` |
+| Fire Reporting | Submit to NERIS | [Submit to NERIS](/modules/fire-reporting/submit-to-neris) | `/fire-reporting/submissions`, `/fire-reporting/submissions/rejected` |
+| IT | Report IT issue | [Report an IT issue](/modules/it/report-an-it-issue) | `/it/helpdesk`, `/it/helpdesk/:ticketId` |
+| IT | Manage IT asset | [Manage an IT asset](/modules/it/manage-an-it-asset) | `/it/assets`, `/it/assets/:assetId` |
+| Chart | Create and complete chart | [Create and complete a chart](/modules/chart/create-and-complete-a-chart) | `/chart`, `/chart/new`, `/chart/:id` |
+| Chart | Print or export chart | [Print or export a chart](/modules/chart/print-or-export-a-chart) | `/chart/:id/print` |
+| Public portals | Submit records request | [Submit a records request](/modules/public-portals/submit-a-records-request) | `/records-request/:agencySlug`, `/records-request/:agencySlug/request/:requestId`, `/records-request/:agencySlug/portal/:token` |
+| Public portals | Use payment link | [Use a payment link](/modules/public-portals/use-a-payment-link) | `/pay/:token` |
+| Public portals | Submit community event request | [Submit a community event request](/modules/public-portals/submit-a-community-event-request) | `/community-events/:agencySlug` |
+| Onboarding | Complete agency onboarding | [Complete agency onboarding](/modules/onboarding/complete-agency-onboarding) | `/onboarding`, `/launchpad` |
+| Onboarding | Review onboarding blockers | [Review onboarding blockers](/modules/onboarding/review-onboarding-blockers) | `/onboarding/manager` |
+| Display | Create station display | [Create a station display](/modules/display/create-a-station-display) | `/display/create`, `/display/edit/:displayId` |
+| Display | Manage display devices | [Manage display devices](/modules/display/manage-display-devices) | `/display/devices` |
+| Print Management | Work print job | [Work a print job](/modules/print-management/work-a-print-job) | `/print-management/subscriptions`, `/print-management/subscriptions/:id` |
+| Print Management | Returned mail and checks | [Process returned mail and checks](/modules/print-management/process-returned-mail-and-checks) | `/print-management/intake`, `/print-management/check-payments` |
+| Ops Charts | Create ops chart | [Create an ops chart](/modules/ops-charts/create-an-ops-chart) | `/ops-charts/safety/charts`, `/ops-charts/security/charts`, `/ops-charts/:id` |
+| Ops Charts | Review ops chart QA | [Review ops chart QA](/modules/ops-charts/review-ops-chart-qa) | `/ops-charts/safety/qa`, `/ops-charts/security/qa` |
+| Admin | Agency profile setup | [Set up agency profile](/admin/setup/agency-profile) | `/admin/agency/organization`, `/admin/agency/contacts`, `/admin/agency/branding`, `/admin/agency/documents` |
+| Admin | Security and access | [Configure security and access](/admin/setup/security-and-access) | `/admin/security/settings` |
+| Admin | Schedule settings | [Configure schedule settings](/admin/modules/schedule-settings) | `/admin/schedule/builder`, `/admin/schedule/rules`, `/admin/schedule/payroll`, `/admin/schedule/comp-time`, `/admin/schedule/notifications`, `/admin/schedule/leave-types`, `/admin/schedule/pto-policies`, `/admin/schedule/visibility`, `/admin/schedule/availability` |
+| Admin | Revenue settings | [Configure revenue settings](/admin/modules/revenue-settings) | Admin Revenue nav from `admin-job-nav.ts`, `REVENUE_*_TABS` |
+| Admin | Provider and people settings | [Configure provider and people settings](/admin/modules/provider-people-settings) | Admin Provider nav from `admin-job-nav.ts`, `PEOPLE_*_TABS`, `SCHEDULE_ADMIN_TABS` |
+
+## Required next coverage
+
+- Revenue claim lifecycle.
+- Payer and facility setup.
+- More patient portal, survey, medical alert, identity, and reconciliation workflows.
+- More dispatch recurring trip, facility portal, resource status, MDT, import, shift report, and admin setup workflows.
+- More clinical incident, registry, provider history, QA insight, and clinical settings workflows.
+- More Fleet vehicle records, vehicle documents, inspections, PM schedules, fuel, reports, and admin setup workflows.
+- More Education program setup, course authoring, learner roster, field training, preceptor, recertification, readiness, reports, and accreditation workflows.
+- More Safety hazards, exposure control, driver fleet safety, scene safety, fit testing, workforce, crew wellbeing, workers comp, committee, fatigue, OSHA, and admin template workflows.
+- More Compliance program, agency authority, dashboard follow-up, resources, and compliance settings workflows.
+- More Inventory pick lists, locations, field inventory, vendor setup, item detail, stock movement, and equipment condition workflows.
+- More Community partners, grants, marketing plans, subscriptions, facility events, facility visit reminders, and admin setup workflows.
+- More Intelligence dashboards, scheduled reports, audit, forecasting, Data Hub, integrations, AI agents, workflow policies, workflow history, and admin setup workflows.
+- More MIH schedule, dispatch, comm center, pathways, tasks, resources, billing readiness, reporting, analytics, portals, import queue, patient list, caseload, and settings workflows.
+- More Fire Reporting prevention, properties, preplans, inspections, permits, hydrants, assets, staffing, personnel, activities, references, and admin settings workflows.
+- More IT dashboard, ticket comments, ticket attachments, asset files, assignment history, and IT settings workflows.
+- More Chart corrections, signatures, locking, NEMSIS submission, migration reports, and chart settings workflows.
+- More Public portal facility, tracking, staffing, careers, community event contract/payment/survey, public compliance, and call shift response workflows.
+- More Onboarding launchpad, template builder, preview, task assignment, imports, and setup-to-admin handoff workflows.
+- More Display overview, all display actions, duplicate/delete/activate, widget builder details, alert layout, access URLs, and device troubleshooting workflows.
+- More Print Management statement queue, print batches, accounting reconciliation, and cross-agency controls.
+- More Ops Charts task, approval, attachment, link, closeout, and status transition workflows.
+- More Admin settings for Home, Dispatch, Chart, MIH, Fire, Quality, Safety, Compliance, Education, Patients, Community, Fleet, Inventory, Logistics, Insight, Data, Automation, and module-specific field definitions.
+- API classification.
+- Changelog sync from LifelineIQ `CHANGELOG/`.
+
+<Note>
+  This matrix is intentionally incomplete. The full goal is every live customer-facing module and workflow.
+</Note>

@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "LifelineIQ Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -9,29 +9,233 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Start here",
         "pages": [
           "index",
-          "quickstart"
+          "quickstart/roles-and-navigation"
+        ]
+      },
+      {
+        "group": "Admin",
+        "pages": [
+          "admin/overview",
+          "admin/setup/agency-profile",
+          "admin/setup/security-and-access",
+          "admin/modules/schedule-settings",
+          "admin/modules/revenue-settings",
+          "admin/modules/provider-people-settings"
+        ]
+      },
+      {
+        "group": "Relay",
+        "pages": [
+          "modules/relay/overview",
+          "modules/personnel/time/clock-in",
+          "modules/personnel/time/clock-out"
+        ]
+      },
+      {
+        "group": "Personnel timekeeping",
+        "pages": [
+          "modules/personnel/time/review-timecards",
+          "modules/personnel/time/export-timecards"
+        ]
+      },
+      {
+        "group": "Scheduling",
+        "pages": [
+          "modules/personnel/schedule/overview",
+          "modules/personnel/schedule/build-a-schedule",
+          "modules/personnel/schedule/approve-schedule-requests"
+        ]
+      },
+      {
+        "group": "Revenue",
+        "pages": [
+          "modules/revenue/overview",
+          "modules/revenue/claims/work-a-claim",
+          "modules/revenue/claims/submit-claims",
+          "modules/revenue/claims/work-denials",
+          "modules/revenue/setup/configure-payers"
+        ]
+      },
+      {
+        "group": "Patients",
+        "pages": [
+          "modules/patients/overview",
+          "modules/patients/find-a-patient",
+          "modules/patients/open-a-patient-record"
+        ]
+      },
+      {
+        "group": "Dispatch",
+        "pages": [
+          "modules/dispatch/overview",
+          "modules/dispatch/use-the-cad-board",
+          "modules/dispatch/create-an-incident"
+        ]
+      },
+      {
+        "group": "Clinical quality",
+        "pages": [
+          "modules/clinical/overview",
+          "modules/clinical/review-qa-worklist",
+          "modules/clinical/complete-a-qa-review"
+        ]
+      },
+      {
+        "group": "Fleet",
+        "pages": [
+          "modules/fleet/overview",
+          "modules/fleet/report-a-maintenance-issue",
+          "modules/fleet/manage-a-work-order"
+        ]
+      },
+      {
+        "group": "Education",
+        "pages": [
+          "modules/education/overview",
+          "modules/education/take-a-course",
+          "modules/education/track-learner-progress"
+        ]
+      },
+      {
+        "group": "Safety",
+        "pages": [
+          "modules/safety/overview",
+          "modules/safety/report-a-safety-incident",
+          "modules/safety/review-safety-checks"
+        ]
+      },
+      {
+        "group": "Compliance",
+        "pages": [
+          "modules/compliance/overview",
+          "modules/compliance/manage-compliance-documents",
+          "modules/compliance/set-compliance-goals"
+        ]
+      },
+      {
+        "group": "Inventory",
+        "pages": [
+          "modules/inventory/overview",
+          "modules/inventory/add-supplies-or-equipment",
+          "modules/inventory/create-and-receive-an-order",
+          "modules/inventory/run-an-inventory-count"
+        ]
+      },
+      {
+        "group": "Community",
+        "pages": [
+          "modules/community/overview",
+          "modules/community/create-a-community-event",
+          "modules/community/manage-renewals-and-donations"
+        ]
+      },
+      {
+        "group": "Intelligence and automation",
+        "pages": [
+          "modules/intelligence/overview",
+          "modules/intelligence/find-and-download-a-report",
+          "modules/automation/create-an-automation-workflow"
+        ]
+      },
+      {
+        "group": "Mobile Integrated Health",
+        "pages": [
+          "modules/mih/overview",
+          "modules/mih/process-a-referral",
+          "modules/mih/enroll-a-patient",
+          "modules/mih/complete-a-visit-chart"
+        ]
+      },
+      {
+        "group": "Fire Reporting",
+        "pages": [
+          "modules/fire-reporting/overview",
+          "modules/fire-reporting/create-a-fire-report",
+          "modules/fire-reporting/review-a-fire-report",
+          "modules/fire-reporting/submit-to-neris"
+        ]
+      },
+      {
+        "group": "IT",
+        "pages": [
+          "modules/it/overview",
+          "modules/it/report-an-it-issue",
+          "modules/it/manage-an-it-asset"
+        ]
+      },
+      {
+        "group": "Chart",
+        "pages": [
+          "modules/chart/overview",
+          "modules/chart/create-and-complete-a-chart",
+          "modules/chart/print-or-export-a-chart"
+        ]
+      },
+      {
+        "group": "Public portals",
+        "pages": [
+          "modules/public-portals/overview",
+          "modules/public-portals/submit-a-records-request",
+          "modules/public-portals/use-a-payment-link",
+          "modules/public-portals/submit-a-community-event-request"
+        ]
+      },
+      {
+        "group": "Onboarding",
+        "pages": [
+          "modules/onboarding/overview",
+          "modules/onboarding/complete-agency-onboarding",
+          "modules/onboarding/review-onboarding-blockers"
+        ]
+      },
+      {
+        "group": "Display",
+        "pages": [
+          "modules/display/overview",
+          "modules/display/create-a-station-display",
+          "modules/display/manage-display-devices"
+        ]
+      },
+      {
+        "group": "Print Management",
+        "pages": [
+          "modules/print-management/overview",
+          "modules/print-management/work-a-print-job",
+          "modules/print-management/process-returned-mail-and-checks"
+        ]
+      },
+      {
+        "group": "Ops Charts",
+        "pages": [
+          "modules/ops-charts/overview",
+          "modules/ops-charts/create-an-ops-chart",
+          "modules/ops-charts/review-ops-chart-qa"
+        ]
+      },
+      {
+        "group": "Personnel administration",
+        "pages": [
+          "modules/personnel/offboarding/offboard-an-employee"
+        ]
+      },
+      {
+        "group": "Implementation tracking",
+        "pages": [
+          "coverage/module-coverage"
+        ]
+      },
+      {
+        "group": "Drafts",
+        "pages": [
+          "drafts/clock-in-example"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -41,13 +245,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@lifeline-iq.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open LifelineIQ",
+      "href": "https://dev.lifeline-iq.com"
     }
   },
   "contextual": {
@@ -61,12 +265,5 @@
       "cursor",
       "vscode"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
