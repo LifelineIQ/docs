@@ -1,0 +1,34 @@
+---
+title: "Documentation coverage"
+description: "Track which LifelineIQ modules and workflows have verified docs."
+sidebarTitle: "Coverage"
+---
+
+This page tracks the rollout from starter docs to complete LifelineIQ documentation.
+
+## Current verified pages
+
+| Area | Workflow | Docs page | Evidence checked |
+| --- | --- | --- | --- |
+| Relay | Clock in | [Clock in](/modules/personnel/time/clock-in) | `/relay`, Relay home, `ConnectDashboard`, `/api/personnel/time-entries/clock-in` |
+| Relay | Clock out | [Clock out](/modules/personnel/time/clock-out) | Relay clock bar, `/api/personnel/time-entries/{id}/clock-out` |
+| Personnel timekeeping | Review timecards | [Review timecards](/modules/personnel/time/review-timecards) | `/schedule/timecards`, timecard dashboard |
+| Personnel timekeeping | Export timecards | [Export timecards](/modules/personnel/time/export-timecards) | Timecard export workflow, `/api/personnel/timecards/export` |
+| Scheduling | Build a schedule | [Build a schedule](/modules/personnel/schedule/build-a-schedule) | `/schedule`, schedule hub, draft/publish behavior |
+| Scheduling | Approve requests | [Approve schedule requests](/modules/personnel/schedule/approve-schedule-requests) | `/schedule/requests`, schedule and leave request review |
+| Personnel | Offboard employee | [Offboard an employee](/modules/personnel/offboarding/offboard-an-employee) | `/personnel`, offboarding/terminated status behavior |
+
+## Required next coverage
+
+- Revenue claim lifecycle.
+- Payer and facility setup.
+- Patient record workflows.
+- Dispatch workflows.
+- Clinical and charting workflows.
+- Admin settings.
+- API classification.
+- Changelog sync from LifelineIQ `CHANGELOG/`.
+
+<Note>
+  This matrix is intentionally incomplete. The full goal is every live customer-facing module and workflow.
+</Note>
