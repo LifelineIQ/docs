@@ -114,7 +114,8 @@
         "pages": [
           "modules/compliance/overview",
           "modules/compliance/manage-compliance-documents",
-          "modules/compliance/set-compliance-goals"
+          "modules/compliance/set-compliance-goals",
+          "modules/compliance/manage-checklist-reminders"
         ]
       },
       {
@@ -123,7 +124,8 @@
           "modules/inventory/overview",
           "modules/inventory/add-supplies-or-equipment",
           "modules/inventory/create-and-receive-an-order",
-          "modules/inventory/run-an-inventory-count"
+          "modules/inventory/run-an-inventory-count",
+          "modules/inventory/review-expiring-supplies"
         ]
       },
       {

@@ -1,0 +1,64 @@
+---
+title: "Review expiring supplies"
+description: "Use LifelineIQ Inventory to find supply lots that are expired or expiring within 30 days, then adjust stock or rotate product before it becomes unusable."
+sidebarTitle: "Expiring supplies"
+---
+
+Use **Expiring Supplies** to see supply lots that have expired or will expire within the next 30 days, and act on them from one view.
+
+## Prerequisites
+
+- Access to **Inventory > Supplies**.
+- Supply items tracked by lot batch and expiration date. See [Add supplies or equipment](/modules/inventory/add-supplies-or-equipment).
+
+## Open the page
+
+Go to **Inventory > Expiring Supplies** in the Inventory sidebar.
+
+The page groups lots into two lists:
+
+- **Expired**: lots past their expiration date that should be pulled or reviewed before use.
+- **Expiring Soon**: lots that will expire within 30 days.
+
+Each list shows the supply, location, lot number, expiration date, quantity on hand, and days remaining or days overdue. Only supply lots with an expiration date are included.
+
+## Metrics at the top
+
+- **Expired Lots**: total lots past expiration.
+- **Expiring Soon**: total lots expiring within 30 days.
+- **Affected Supplies**: distinct supply items at risk.
+- **Units at Risk**: total quantity across all affected lots.
+
+## Act on a lot
+
+<Steps>
+  <Step title="Find the lot">
+    Search by supply name, SKU, lot number, or location. Lots are sorted by soonest expiration first.
+  </Step>
+  <Step title="Open the supply">
+    Select the row or the external-link icon to open the supply record and see all of its lots and locations.
+  </Step>
+  <Step title="Adjust stock">
+    Select **Adjust** on the lot's row to open the stock adjustment dialog with the supply and location pre-filled. Remove expired quantity, transfer stock, or record a waste reason.
+  </Step>
+</Steps>
+
+## Common problems
+
+### A lot I expect to see is missing
+
+Only lots with an expiration date and a **Supply** category appear. Confirm the item is categorized as a supply and that the lot has an expiration date on file.
+
+### Expired stock is still showing on hand
+
+Use **Adjust** to remove the expired quantity from the lot. The expired lot will drop off the list once its quantity on hand is zero.
+
+### I need a longer window than 30 days
+
+The page shows the next 30 days. For longer-range planning, open the supply record to see every lot and expiration date.
+
+## Related pages
+
+- [Inventory overview](/modules/inventory/overview)
+- [Add supplies or equipment](/modules/inventory/add-supplies-or-equipment)
+- [Run an inventory count](/modules/inventory/run-an-inventory-count)
