@@ -1,0 +1,71 @@
+---
+title: "Manage checklist reminders"
+description: "Turn on compliance checklist reminders in LifelineIQ so staff get in-app and email nudges for new content, upcoming expirations, and overdue cycles."
+sidebarTitle: "Checklist reminders"
+---
+
+Use **Compliance settings** to control the in-app and email reminders LifelineIQ sends for agency compliance checklists. Reminders are off by default so your agency chooses what staff receive.
+
+## Prerequisites
+
+- Access to **Admin > Compliance** or **Compliance > Settings** (admin role).
+- At least one active agency checklist with a due date. Add checklists under **Your checklists** on the same page.
+
+## Reminder types
+
+Each toggle is independent. When a toggle is on, LifelineIQ sends the reminder in-app and by email to the assignees for that cycle.
+
+| Reminder | When it sends | Who receives it |
+| --- | --- | --- |
+| **Expiration reminders** | The configured number of days before the checklist's due date. | Assignees who have not completed the current cycle. |
+| **Overdue alerts** | After the due date passes. | Assignees who have not completed the current cycle. |
+| **New content** | When a new checklist is assigned. | Every staff member the checklist targets. |
+
+For per-person checklists, each staff member gets their own reminder. For whole-agency checklists, the reminder goes to the agency inbox for the cycle.
+
+## Turn on reminders
+
+<Steps>
+  <Step title="Open compliance settings">
+    Go to **Compliance > Settings** and open the **Notifications** section.
+  </Step>
+  <Step title="Enable the reminder types you want">
+    Turn on **Expiration reminders**, **Overdue alerts**, or **New content**. You can enable any combination.
+  </Step>
+  <Step title="Set the expiration lead time">
+    With **Expiration reminders** on, enter how many days before the due date the reminder should go out. Valid range is 1 to 90 days.
+  </Step>
+  <Step title="Save and verify">
+    Changes save as you toggle. Check **Completion** to confirm assignees appear for the current cycle.
+  </Step>
+</Steps>
+
+## Track who still needs to finish
+
+Open the **Completion** section on the same page for the current cycle of each active checklist.
+
+- Cycles past their due date show an **Overdue** badge.
+- Per-person checklists include a **Who's left** drill-down that lists the staff who have not completed the current cycle.
+- The completion column shows how many eligible staff finished, with a running percentage.
+
+Use the drill-down to follow up directly with staff instead of resending a blanket reminder.
+
+## Common problems
+
+### Staff say they did not get a reminder
+
+Confirm the matching toggle is on in **Notifications**, and that the staff member is an active assignee for the current cycle. Reminders never re-send for the same cycle, so if a toggle was off when the window passed, that cycle will not backfill.
+
+### Expiration reminders send too early or too late
+
+Adjust **Days before due to send expiration reminders**. Increase the value for longer lead time, or lower it for a closer-to-due nudge.
+
+### A checklist is not on the completion list
+
+Only active checklists with a due date appear. Open **Your checklists** and confirm the checklist is active and has a first due date.
+
+## Related pages
+
+- [Compliance overview](/modules/compliance/overview)
+- [Manage compliance documents](/modules/compliance/manage-compliance-documents)
+- [Set compliance goals](/modules/compliance/set-compliance-goals)
