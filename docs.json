@@ -240,6 +240,7 @@
         "group": "Changelog",
         "pages": [
           "changelog/overview",
+          "changelog/2026-06-30",
           "changelog/2026-06-29"
         ]
       }
