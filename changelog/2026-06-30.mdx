@@ -1,0 +1,56 @@
+---
+title: "Week of June 30, 2026"
+description: "CareIQ quality review console, real vendor checks on integrations, plus revenue, dispatch, and admin polish."
+sidebarTitle: "June 30, 2026"
+---
+
+A focused release with one new Clinical Quality workspace, more honest "Test connection" behavior on integrations, and a batch of Revenue, Dispatch, and Admin fixes.
+
+## New features
+
+### CareIQ review console
+A new **Quality → CareIQ** console pulls clinical QA reviews, pending patient survey responses, and patient complaints and compliments into a single worklist. Select an item to see the details and patient context, then complete the review in place. Pending survey responses now list with the patient's name so you can work through them without opening each one first. See [Review the QA worklist](/modules/clinical/review-qa-worklist).
+
+## Updates
+
+### Integration "Test connection" makes a real vendor call
+Using **Test connection** on a third-party integration now makes a real, lightweight authenticated call to the provider for Stripe, SendGrid, Twilio, HubSpot, and Linear. A green success only appears when the vendor actually accepts the credentials. Revoked or wrong keys now show a clear failure, and an unreachable provider is reported honestly instead of appearing successful. For providers without a live check yet (Plaid), the test shows a neutral **configuration looks complete — connectivity not verified** state. Previously the test reported success as soon as the required fields were filled in, which could make a broken integration look healthy.
+
+### Prior authorization summary on claims
+Claims with prior authorization history now show the latest status, authorization number, valid dates, and unit usage in the claim sidebar, so billers can spot expired or over-used authorizations sooner.
+
+### Facility portal name is opt-in
+On the public facility (dispatch) portal's **Your name** field, your name is now kept only for the current browser session by default and clears when you close the tab. Tick **Remember on this device** to save it for your next visit — useful for shared computers.
+
+### More consistent data tables
+Eligibility benefits, cash-flow planning, org chart, and form-preview screens now use the shared design-system table components, so row spacing, headers, and hover behavior match the rest of the app.
+
+## Bug fixes
+
+### Revenue
+- **Waystar resubmit after changes** — Claims edited after a prior Waystar send can now be resubmitted instead of being blocked as duplicates.
+- **Payment posting shows clearer claim context** — Manual payment posting shows the selected patient and resolves the primary payer more reliably.
+- **Financial approvals block unsupported actions** — Recoupment and takeback are removed from the approval policy dropdown because they couldn't post at the final step; any older queued items are handled cleanly.
+- **Facility detail contract and pricing buttons work** — **Add Contract** and per-row **Edit** on a facility now open the linked payer's contract area, and **Add Pricing Rule** is clearly marked coming soon instead of doing nothing.
+
+### Provider and scheduling
+- **Alert rules no longer duplicate** — Provider alert setup now blocks duplicate rule creation and makes active alerts clearer.
+- **Case management ordering** — Case categories and workflow stages can be reordered from settings again.
+- **Schedule cards no longer look clickable when they aren't** — Read-only shift cards drop their hover and button styling; cards that open a detail view keep it.
+
+### Patients and portals
+- **Patient portal preview opens** — Previewing the patient portal by last name, date of birth, and ZIP code now opens the portal instead of erroring while loading billing details.
+
+### Dispatch and displays
+- **Station Display Upcoming Events widget** — The Upcoming Events widget now pulls your agency's scheduled community events within its day window instead of always reading "No upcoming events."
+
+### Admin and settings
+- **Agency profile typing stays stable** — Typing into agency profile fields is no longer interrupted by background saves.
+- **Admin inventory page loads** — The admin inventory page opens its settings content instead of showing a blank page.
+- **Onboarding invite recovery** — Expired or invalid onboarding invite links now show clear sign-in and support options.
+
+### MIH
+- **MIH resource search availability** — MIH resource import hides external partner searches when they aren't configured for your agency.
+
+### Planning
+- **Profitability Planning honest unavailable state** — The Scenarios tab now shows a clear "Scenario analysis unavailable" message on saved plans instead of spinning on "Generating scenarios..." forever.
